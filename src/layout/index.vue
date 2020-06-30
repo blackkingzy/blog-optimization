@@ -34,7 +34,6 @@ export default {
 }
 
 .main-container {
-  position: relative;
   margin: 0 auto;
   width: 100%;
   max-width: 960px;

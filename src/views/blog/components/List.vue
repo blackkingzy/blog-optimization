@@ -1,7 +1,7 @@
 <template>
   <div class="blog-list">
     <div class="article" v-for="item in data" :key="item.id">
-      <router-link :to="`/user/${item.id}`" class="article_flex">
+      <router-link :to="`/post/${item.id}`" class="article_flex">
         <div class="article_content">
           <div class="article_title">
             {{ item.title }}
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'ArticleList',
+  name: 'List',
   data() {
     return {
       data: [

@@ -24,7 +24,8 @@ export default {
       labelList: ['recommend', 'frontend', 'backend', 'node', 'css', 'note']
     }
   },
-  computed: {},
+  computed: {
+  },
   methods: {
     select(name) {
       this.selectItem = name

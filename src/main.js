@@ -14,7 +14,7 @@ Vue.use(ElementUI)
 
 //这个是根实例,根组件App.$parent是根实例
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')

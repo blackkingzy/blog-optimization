@@ -46,9 +46,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (min-width: 960px) {
+  .blog-content {
+    width: 700px;
+  }
+}
+
 .blog-content {
   background-color: #fff;
-  width: 700px;
   border-radius: 2px;
 }
 .list-header {

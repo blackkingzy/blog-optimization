@@ -36,9 +36,7 @@
         ></el-input>
       </div>
       <div>
-        <a href="http://www.blackyue.com" target="_blank"
-          ><el-button type="primary">写文章</el-button></a
-        >
+        <a href="http://www.blackyue.com" target="_blank"><el-button type="primary">写文章</el-button></a>
       </div>
     </div>
   </div>

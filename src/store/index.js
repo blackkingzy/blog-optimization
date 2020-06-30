@@ -16,7 +16,7 @@ export default new Vuex.Store({
   actions,
   modules: {
     photo,
-    article
+    article,
   },
   plugins: [Plugin]
 })

@@ -6,6 +6,7 @@ Vue.use(Router)
 import Layout from '@/layout'
 
 import Blog from '@/views/blog'
+import ArticleDetails from '@/views/article-details'
 import Photo from '@/views/photo'
 import BlogContent from '@/views/blog/components/Content'
 
@@ -29,9 +30,20 @@ export default new Router({
             },
             {
               path: ':label',
-              component: BlogContent
+              component: BlogContent,
             }
           ]
+        },
+      ]
+    },
+    {
+      path: '/post',
+      component: Layout,
+      children: [
+        {
+          path: ':id',
+          name: 'details',
+          component: ArticleDetails
         }
       ]
     },
@@ -39,15 +51,15 @@ export default new Router({
       path: '/photo',
       component: Layout,
       children: [
-        { path: '', name: 'photo', component: Photo }
+        { path: '', name: 'photo', component: Photo },
         // ...其他子路由
       ]
     },
     {
       path: '/video',
       name: 'video',
-      component: Layout
-    }
+      component: Layout,
+    },
     // ...其他子路由
     // {
     //   path: '/photoUpload',
